@@ -1,5 +1,3 @@
-![LEDE-OpenWRT](https://github.com/Oakwen/LEDE-OpenWRT/workflows/LEDE-OpenWRT/badge.svg?branch=master)
-
 # LEDE-OpenWRT
 编译LEDE的openwrt固件，树莓派3B专用。
 
