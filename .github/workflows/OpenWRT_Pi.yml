@@ -93,3 +93,7 @@ jobs:
 #         with:
 #           name: LEDE-RaspberryPi_firmware
 #           path: ${{ env.FIRMWARE }}
+
+      - name: Remove artifacts
+        uses: c-hive/gha-remove-artifacts@v1.1.0
+
