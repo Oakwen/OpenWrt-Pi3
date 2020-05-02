@@ -80,20 +80,22 @@ jobs:
           name: LEDE-RaspberryPi-bin-dictionary
           path: lede/bin
 
-#       - name: Setup Upload dictionary
-#         if: always()
-#         run: |
-#           cd lede/bin/targets/*/*
-#           rm -rf packages
-#           echo "::set-env name=FIRMWARE::$(pwd)"
+      #       - name: Setup Upload dictionary
+      #         if: always()
+      #         run: |
+      #           cd lede/bin/targets/*/*
+      #           rm -rf packages
+      #           echo "::set-env name=FIRMWARE::$(pwd)"
 
-#       - name: Only Upload firmware (Without packages)
-#         uses: actions/upload-artifact@master
-#         if: always()
-#         with:
-#           name: LEDE-RaspberryPi_firmware
-#           path: ${{ env.FIRMWARE }}
+      #       - name: Only Upload firmware (Without packages)
+      #         uses: actions/upload-artifact@master
+      #         if: always()
+      #         with:
+      #           name: LEDE-RaspberryPi_firmware
+      #           path: ${{ env.FIRMWARE }}
 
       - name: Remove artifacts
         uses: c-hive/gha-remove-artifacts@v1.1.0
-
+        with:
+          age: "1 week"
+          skip-tags: true
