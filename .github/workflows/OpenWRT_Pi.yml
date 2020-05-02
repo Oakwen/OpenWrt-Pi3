@@ -3,10 +3,10 @@ name: OpenWRT_Pi
 on:
   watch:
     types: started
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
+#   push:
+#     branches: [master]
+#   pull_request:
+#     branches: [master]
 
 env:
   SSH_ACTIONS: false
