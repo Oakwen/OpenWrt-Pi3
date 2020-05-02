@@ -1,5 +1,4 @@
-![OpenWRT_Pi](https://github.com/Oakwen/Openwrt_Pi/workflows/OpenWRT_Pi/badge.svg?branch=master)
-
+![Remove old artifacts](https://github.com/Oakwen/Openwrt_Pi/workflows/Remove%20old%20artifacts/badge.svg)
 # LEDE-OpenWRT
 编译LEDE的openwrt固件，树莓派3B专用。
 
