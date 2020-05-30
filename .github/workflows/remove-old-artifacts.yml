@@ -4,8 +4,8 @@ on:
   watch:
     types: started
   schedule:
-    # Every day at 1am
-    - cron: "0 1 * * *"
+    # Every day at 2am
+    - cron: "0 2 * * *"
 
 jobs:
   remove-old-artifacts:
@@ -16,5 +16,5 @@ jobs:
       - name: Remove old artifacts
         uses: c-hive/gha-remove-artifacts@v1
         with:
-          age: "1 day"
+          age: "1 week"
           skip-tags: true
