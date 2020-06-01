@@ -176,7 +176,7 @@ nameserver 192.168.8.8
 
 进入路由器后台中，将主路由的 DHCP 的默认网关和 DNS 服务器设置为第 4.25 步中```option ipaddr``` 项目中的 IP。
 
-![主路由dhcp设置](https://raw.githubusercontent.com/Oakwen/Openwrt-Pi3/master/images/main_router_dhcp_setting.png)
+![主路由dhcp设置](https://github.com/Oakwen/Openwrt-Pi3/raw/master/images/main_router_dhcp_setting.png)
 
 **在梅林固件中，开启科学上网的情况下，DNS设置不生效！**
 
