@@ -41,8 +41,8 @@ jobs:
       - name: Download and Load custom configuration
         run: |
           cd lede
-          curl -fsSL https://github.com/Oakwen/Openwrt_Pi/blob/master/config/.config >.config
-          bash <(curl -fsSL https://github.com/Oakwen/Openwrt_Pi/blob/master/config/diy.sh)
+          curl -fsSL https://raw.githubusercontent.com/Oakwen/Openwrt_Pi/master/config/.config >.config
+          bash <(curl -fsSL https://raw.githubusercontent.com/Oakwen/Openwrt_Pi/master/config/diy.sh)
           ./scripts/feeds install -a
           make defconfig
 

@@ -26,5 +26,4 @@ sed -i 's/192.168.1.1/192.168.8.100/g' package/base-files/files/bin/config_gener
 # Add some default settings
 
 #\cp -rf ../lede/zzz-default-settings package/lean/default-settings/files/zzz-default-settings
-# curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lean-lede/zzz-default-settings > package/lean/default-settings/files/zzz-default-settings
-curl -fsSL https://github.com/Oakwen/Openwrt_Pi/blob/master/config/zzz-default-settings  > package/lean/default-settings/files/zzz-default-settings
+curl -fsSL https://raw.githubusercontent.com/Oakwen/Openwrt_Pi/master/config/zzz-default-settings > package/lean/default-settings/files/zzz-default-settings
