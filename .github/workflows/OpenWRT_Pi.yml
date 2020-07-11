@@ -6,7 +6,11 @@ on:
 #   push:
 #     branches: [master]
 #   pull_request:
-#     branches: [master]
+#     branches: [master] 
+  schedule:
+    # Every day at 2am
+    - cron: "0 20 * * *"
+
 
 env:
   SSH_ACTIONS: false
