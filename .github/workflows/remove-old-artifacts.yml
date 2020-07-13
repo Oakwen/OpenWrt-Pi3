@@ -3,9 +3,9 @@ name: Remove old artifacts
 on:
   watch:
     types: started
-  schedule:
+#   schedule:
     # Every day at 2am
-    - cron: "0 2 * * *"
+#     - cron: "0 2 * * *"
 
 jobs:
   remove-old-artifacts:
