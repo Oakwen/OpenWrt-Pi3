@@ -77,7 +77,7 @@ jobs:
           df -h
 
       - name: Upload entire bin directory
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@main
         if: always()
         with:
           name: LEDE-RaspberryPi-bin-dictionary
@@ -91,7 +91,7 @@ jobs:
           echo "::set-env name=FIRMWARE::$(pwd)"
 
       - name: Only Upload firmware (Without packages)
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@main
         if: always()
         with:
           name: LEDE-RaspberryPi3_firmware
