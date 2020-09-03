@@ -45,7 +45,7 @@ jobs:
       - name: Download and Load custom configuration
         run: |
           cd lede
-          curl -fsSL https://raw.githubusercontent.com/Oakwen/Openwrt_Pi/master/config/Pi3/.config >.config
+          curl -fsSL https://raw.githubusercontent.com/Oakwen/Openwrt_Pi/master/config/RM2100/.config >.config
           bash <(curl -fsSL https://raw.githubusercontent.com/Oakwen/Openwrt_Pi/master/config/diy.sh)
           ./scripts/feeds install -a
           make defconfig
@@ -80,7 +80,7 @@ jobs:
         uses: actions/upload-artifact@main
         if: always()
         with:
-          name: LEDE-RaspberryPi-bin-dictionary
+          name: LEDE-RM2100-bin-dictionary
           path: lede/bin
 
       - name: Setup Upload dictionary
@@ -94,7 +94,7 @@ jobs:
         uses: actions/upload-artifact@main
         if: always()
         with:
-          name: LEDE-RaspberryPi3_firmware
+          name: LEDE-RM2100_firmware
           path: ${{ env.FIRMWARE }}
 
       - name: Remove artifacts
