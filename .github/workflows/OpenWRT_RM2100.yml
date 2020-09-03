@@ -1,4 +1,4 @@
-name: OpenWRT_Pi
+name: OpenWRT_RM2100
 
 on:
   watch:
@@ -8,8 +8,8 @@ on:
   #   pull_request:
   #     branches: [master]
   schedule:
-    # Every day at 2am
-    - cron: "0 16 * * *"
+    # Every day at 3am
+    - cron: "0 17 * * *"
 
 env:
   SSH_ACTIONS: false
