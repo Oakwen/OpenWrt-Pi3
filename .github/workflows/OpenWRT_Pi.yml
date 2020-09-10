@@ -8,8 +8,8 @@ on:
   #   pull_request:
   #     branches: [master]
     schedule:
-    # Every day at 2am
-     - cron: "0 16 * * *"
+    # Every day at 8am
+     - cron: "0 22 * * *"
 
 env:
   SSH_ACTIONS: false
