@@ -1,8 +1,8 @@
 # LEDE-OpenWRT
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Oakwen/Openwrt/OpenWRT_Pi?label=OpenWRT_Pi&style=plastic)    ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Oakwen/Openwrt/OpenWRT_RM2100?label=OpenWRT_RM2100&style=plastic)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Oakwen/Openwrt/OpenWRT_Pi?label=OpenWRT_Pi&style=plastic)    ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Oakwen/Openwrt/OpenWRT_RM2100?label=OpenWRT_RM2100&style=plastic)    ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Oakwen/OpenWRT)
 
 
-编译LEDE的openwrt固件，树莓派3B专用。
+编译LEDE的openwrt固件，树莓派3B和红米2100专用。
 
 ---
 
