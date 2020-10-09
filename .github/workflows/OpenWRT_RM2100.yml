@@ -9,7 +9,7 @@ on:
   #     branches: [master]
   schedule:
     # Every day at 3am
-    - cron: "0 17 * * *"
+    - cron: "0 16 * * *"
 
 env:
   SSH_ACTIONS: false
