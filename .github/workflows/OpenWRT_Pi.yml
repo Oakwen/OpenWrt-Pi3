@@ -7,9 +7,9 @@ on:
   #     branches: [master]
   #   pull_request:
   #     branches: [master]
-    schedule:
-    # Every day at 18pm
-     - cron: "0 2 * * *"
+  schedule:
+  # Every day at 18pm
+   - cron: "0 18 * * *"
 
 env:
   SSH_ACTIONS: false
