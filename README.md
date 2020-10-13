@@ -1,5 +1,5 @@
 # LEDE-OpenWRT
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Oakwen/Openwrt/OpenWRT_Pi?label=OpenWRT_Pi&style=plastic)    ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Oakwen/Openwrt/OpenWRT_RM2100?label=OpenWRT_RM2100&style=plastic)    ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Oakwen/OpenWRT)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Oakwen/Openwrt/OpenWRT?label=OpenWRT_Pi&style=plastic)    ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Oakwen/Openwrt/OpenWRT_RM2100?label=OpenWRT_RM2100&style=plastic)    ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Oakwen/OpenWRT)
 
 
 编译LEDE的openwrt固件，树莓派3B和红米2100专用。
@@ -77,4 +77,4 @@ make -j$(($(nproc) + 1)) V=s
 
 ---
 
-#### 在仓库 [Openwrt-Pi3](https://github.com/Oakwen/Openwrt-Pi3) 中，有配合Github Actions在线编译的配置文件。在线编译在私人仓库 [Openwrt_Pi](https://github.com/Oakwen/Openwrt_Pi) 中完成
+#### 在仓库 [Openwrt](https://github.com/Oakwen/Openwrt) 中，有配合Github Actions在线编译的配置文件。在线编译在私人仓库 [Openwrt_Pi](https://github.com/Oakwen/Openwrt_Pi) 中完成
