@@ -141,7 +141,7 @@ nameserver 192.168.8.8
 # Fix Luci, Don't remove !!
 umount /etc/resolv.conf
 rm /etc/resolv.conf
-ln -s /tmp/resolv.conf.auto /etc/resolv.conf
+ln -s /tmp/resolv.conf.d/resolv.conf.auto /etc/resolv.conf
 ```
 
 ```vi /tmp/resolv.conf.auto```
