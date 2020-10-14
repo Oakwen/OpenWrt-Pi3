@@ -83,20 +83,6 @@ jobs:
           name: LEDE-RM2100-bin-dictionary
           path: lede/bin
 
-      - name: Setup Upload dictionary
-        if: always()
-        run: |
-          cd lede/bin/targets/*/*
-          rm -rf packages
-          echo "::set-env name=FIRMWARE::$(pwd)"
-
-      - name: Only Upload firmware (Without packages)
-        uses: actions/upload-artifact@main
-        if: always()
-        with:
-          name: LEDE-RM2100_firmware
-          path: ${{ env.FIRMWARE }}
-
       - name: Remove artifacts
         uses: c-hive/gha-remove-artifacts@v1.1.0
         with:
