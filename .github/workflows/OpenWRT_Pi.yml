@@ -76,12 +76,19 @@ jobs:
           make -j1 V=s
           df -h
 
-      - name: Upload entire bin directory
-        uses: actions/upload-artifact@main
-        if: always()
+      # - name: Upload entire bin directory
+      #   uses: actions/upload-artifact@main
+      #   if: always()
+      #   with:
+      #     name: LEDE-RaspberryPi-bin-dictionary
+      #     path: lede/bin
+
+      - name: Upload openwrt-bcm27xx-bcm2710-rpi-3-rootfs.tar.gz only
+        uses: actions/checkout@v2
+        if: success()
         with:
-          name: LEDE-RaspberryPi-bin-dictionary
-          path: lede/bin
+          name: openwrt-bcm27xx-bcm2710-rpi-3-rootfs.tar.gz
+          path: lede/bin/targets/bcm27xx/bcm2710/openwrt-bcm27xx-bcm2710-rpi-3-rootfs.tar.gz
 
       - name: Remove artifacts
         uses: c-hive/gha-remove-artifacts@v1.1.0

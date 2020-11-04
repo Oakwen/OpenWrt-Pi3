@@ -144,7 +144,7 @@ rm /etc/resolv.conf
 ln -s /tmp/resolv.conf.d/resolv.conf.auto /etc/resolv.conf
 ```
 
-```vi /tmp/resolv.conf.auto```
+```vi /tmp/resolv.conf.d/resolv.conf.auto```
 
 ```bash
 # Interface lan
@@ -170,13 +170,13 @@ nameserver 192.168.8.8
 ## 7. 关闭DHCP服务
 
 在 “网络 - 接口 - Lan - 修改” 界面中，勾选下方的 “忽略此接口（不在此接口提供 DHCP 服务）”，并“保存&应用”。
-![关闭DHCP服务](https://github.com/Oakwen/Openwrt-Pi3/raw/master/images/shutdown_dhcp.png)
+![关闭DHCP服务](https://github.com/Oakwen/Openwrt/raw/master/images/shutdown_dhcp.png)
 
 ## 8. 主路由DHCP设置
 
 进入路由器后台中，将主路由的 DHCP 的默认网关和 DNS 服务器设置为第 4.25 步中```option ipaddr``` 项目中的 IP。
 
-![主路由dhcp设置](https://github.com/Oakwen/Openwrt-Pi3/raw/master/images/main_router_dhcp_setting.png)
+![主路由dhcp设置](https://github.com/Oakwen/Openwrt/raw/master/images/main_router_dhcp_setting.png)
 
 **在梅林固件中，开启科学上网的情况下，DNS设置不生效！**
 
@@ -190,7 +190,7 @@ nameserver 192.168.8.8
 
 设置旁路路由后，若出现访问国内网站网速慢，不稳定的情况（多见于 Pandavan 及其改版固件，如华硕老毛子固件），请在路由器的控制面板中关闭有关 WLAN 的硬件加速，比如选择“Offload TCP/UDP for LAN”（若未出现此现象请忽略）：
 
-![关闭WLAN硬件加速](https://github.com/Oakwen/Openwrt-Pi3/raw/master/images/VLAN_speedup.png)
+![关闭WLAN硬件加速](https://github.com/Oakwen/Openwrt/raw/master/images/VLAN_speedup.png)
 
 ### 10.2 宿主机网络修复
 
