@@ -88,7 +88,7 @@ jobs:
         if: success()
         with:
           name: openwrt-bcm27xx-bcm2710-rpi-3-rootfs.tar.gz
-          path: lede/bin/targets/bcm27xx/bcm2710
+          path: lede/bin/targets/bcm27xx/bcm2710/openwrt-bcm27xx-bcm2710-rpi-3-rootfs.tar.gz
 
       - name: Remove artifacts
         uses: c-hive/gha-remove-artifacts@v1.1.0
