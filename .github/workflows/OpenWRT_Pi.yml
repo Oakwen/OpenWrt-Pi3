@@ -83,12 +83,12 @@ jobs:
       #     name: LEDE-RaspberryPi-bin-dictionary
       #     path: lede/bin
 
-      - name: Upload openwrt-bcm27xx-bcm2710-rpi-3-rootfs.tar.gz only
-        uses: actions/checkout@v2
+      - name: Upload rootfs only
+        uses: actions/upload-artifact@v2
         if: success()
         with:
           name: openwrt-bcm27xx-bcm2710-rpi-3-rootfs.tar.gz
-          path: lede/bin/targets/bcm27xx/bcm2710/openwrt-bcm27xx-bcm2710-rpi-3-rootfs.tar.gz
+          path: lede/bin/targets/bcm27xx/bcm2710
 
       - name: Remove artifacts
         uses: c-hive/gha-remove-artifacts@v1.1.0
