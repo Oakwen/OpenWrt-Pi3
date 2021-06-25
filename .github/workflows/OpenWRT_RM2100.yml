@@ -68,13 +68,13 @@ jobs:
           make -j$(nproc)
           df -h
 
-      - name: Single-core compile
-        if: failure()
-        run: |
-          df -h
-          cd lede
-          make -j1 V=s
-          df -h
+#       - name: Single-core compile
+#         if: failure()
+#         run: |
+#           df -h
+#           cd lede
+#           make -j1 V=s
+#           df -h
 
       - name: Upload entire bin directory
         uses: actions/upload-artifact@main
