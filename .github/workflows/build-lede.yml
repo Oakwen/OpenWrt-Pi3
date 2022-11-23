@@ -54,12 +54,6 @@ jobs:
         run: |
           cd bin/targets/*/*
           zip -r -o -q -9 rpi.zip . -i *.gz
-          curl -F "token=${{ secrets.UPLOAD_TOKEN }}" -F "location=Router/lede/RaspberryPi" -F "file=@rpi.zip" ${{ secrets.MAIN_UPLOAD_PROCESSOR }}
-      
-      - name: Remove workflow runs
-        uses: Mattraks/delete-workflow-runs@main
-        with:
-          retain_days: 1
-          keep_minimum_runs: 1
+
           
           
