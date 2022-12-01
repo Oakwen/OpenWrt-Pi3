@@ -29,7 +29,8 @@ jobs:
 
       - name: Download and Load custom configuration
         run: |
-          curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lede/rpi/.config >.config
+   #       curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lede/rpi/.config >.config
+          curl -fsSL https://raw.githubusercontent.com/Oakwen/Openwrt/master/config/.config >.config          
           bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/lede/diy.sh)
           echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config;
 
