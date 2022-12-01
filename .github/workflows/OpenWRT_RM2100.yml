@@ -1,8 +1,8 @@
 name: OpenWRT_RM2100
 
 on:
-  watch:
-    types: started
+#   watch:
+#     types: started
   #   push:
   #     branches: [master]
   #   pull_request:
